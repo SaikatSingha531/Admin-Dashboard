@@ -46,7 +46,7 @@ const Sidebar = () => {
           onClick={toggleDrawer(anchor, false)}
           onKeyDown={toggleDrawer(anchor, false)}
         >
-          {/* <h1>This is logo</h1> */}
+          <h1 className='flex justify-center mt-2 font-bold text-2xl underline'>Demo Admin</h1>
           <List>
             {/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
               <ListItem key={text} disablePadding>
