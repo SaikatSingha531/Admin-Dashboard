@@ -15,7 +15,7 @@ import { FaFileArchive } from "react-icons/fa";
 const HeroNav = () => {
   return (
     <>
-      <div class="bg-blue-500 w-[90%] mx-[5px] h-16 md:w-[95%] lg:w-[97%] my-2 rounded-md flex justify-center items-center gap-4 overflow-x-auto px-2">
+      <div className="bg-blue-500 w-[90%] mx-[5px] h-16 md:w-[95%] lg:w-[97%] my-2 rounded-md flex justify-center items-center gap-4 overflow-x-auto px-2">
         <Tooltip title="Profile" placement="top">
           <div className="bg-orange-500 h-10 w-10 rounded-md flex justify-center items-center ">
           <CgProfile />

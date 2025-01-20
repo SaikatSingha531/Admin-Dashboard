@@ -23,6 +23,7 @@ import { SiGoogleclassroom } from "react-icons/si";
 import { BiSolidUserAccount } from "react-icons/bi";
 import { MdManageAccounts } from "react-icons/md";
 import { IoIosLogOut } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 
 const Sidebar = () => {
@@ -45,6 +46,7 @@ const Sidebar = () => {
           onClick={toggleDrawer(anchor, false)}
           onKeyDown={toggleDrawer(anchor, false)}
         >
+          {/* <h1>This is logo</h1> */}
           <List>
             {/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
               <ListItem key={text} disablePadding>
@@ -58,6 +60,8 @@ const Sidebar = () => {
             ))} */}
           </List>
           {/* <Divider /> */}
+
+
           <List>
             {/* {['All mail', 'Trash', 'Spam'].map((text, index) => (
               <ListItem key={text} disablePadding>
@@ -69,17 +73,18 @@ const Sidebar = () => {
                 </ListItemButton>
               </ListItem>
               ))} */}
+
               <ListItem>
-                <ListItemButton>
+                <ListItem component={Link} to="/">
                   <ListItemIcon>
                   <FaHome />
                   </ListItemIcon>
                   <ListItemText primary={"Home"}/>
-                </ListItemButton>
+                </ListItem>
               </ListItem>
 
             <ListItem>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/maintain">
                 <ListItemIcon>
                 <TfiDashboard />
                 </ListItemIcon>
@@ -88,7 +93,7 @@ const Sidebar = () => {
             </ListItem>
 
             <ListItem>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/maintain">
                 <ListItemIcon>
                 <IoIosPeople />
                 </ListItemIcon>
@@ -97,7 +102,7 @@ const Sidebar = () => {
             </ListItem>
 
             <ListItem>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/maintain">
                 <ListItemIcon>
                 <MdSms />
                 </ListItemIcon>
@@ -106,7 +111,7 @@ const Sidebar = () => {
             </ListItem>
 
             <ListItem>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/maintain">
                 <ListItemIcon>
                 <SiGoogleclassroom />
                 </ListItemIcon>
@@ -115,7 +120,7 @@ const Sidebar = () => {
             </ListItem>
             
             <ListItem>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/maintain">
                 <ListItemIcon>
                 <BiSolidUserAccount />
                 </ListItemIcon>
@@ -127,7 +132,7 @@ const Sidebar = () => {
 
               
             <ListItem>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/maintain">
                 <ListItemIcon>
                 <MdManageAccounts />
                 </ListItemIcon>
@@ -136,7 +141,7 @@ const Sidebar = () => {
             </ListItem>
 
             <ListItem>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/maintain">
                 <ListItemIcon>
                 <InfoSharpIcon/>
                 </ListItemIcon>
@@ -145,7 +150,7 @@ const Sidebar = () => {
             </ListItem>
 
             <ListItem>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/maintain">
                 <ListItemIcon>
                 <IoIosLogOut />
                 </ListItemIcon>
