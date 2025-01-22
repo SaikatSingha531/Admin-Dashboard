@@ -3,6 +3,7 @@ import Cards from './Cards'
 const Hero = () => {
   return (
     <>
+    <h1 className='font-bold text-lg my-3'>Admin Dashboard</h1>
     <div className="main border-2 rounded-md h-auto w-[90%] md:w-[95%] lg:w-[97%] my-3">
     <div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-2 md:grid-cols-4">
        <div className='bg-red-200 text-red-700 rounded-lg hover:bg-red-300 duration-300'><Cards cardValue={0} cardText={"Dues-Amount"} /></div> 
