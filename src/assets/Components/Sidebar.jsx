@@ -45,6 +45,7 @@ const Sidebar = () => {
           role="presentation"
           onClick={toggleDrawer(anchor, false)}
           onKeyDown={toggleDrawer(anchor, false)}
+          className="bg-blue-700 text-white font-bold"
         >
           <h1 className='flex justify-center mt-2 font-bold text-2xl underline'>Demo Admin</h1>
           <List>
@@ -74,10 +75,10 @@ const Sidebar = () => {
               </ListItem>
               ))} */}
 
-              <ListItem>
+              <ListItem >
                 <ListItem component={Link} to="/">
                   <ListItemIcon>
-                  <FaHome />
+                  <FaHome/>
                   </ListItemIcon>
                   <ListItemText primary={"Home"}/>
                 </ListItem>
@@ -161,7 +162,6 @@ const Sidebar = () => {
           </List>
         </Box>
 
-        
       );
     
 

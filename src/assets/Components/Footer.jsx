@@ -13,7 +13,7 @@ function Footer() {
       <footer className="bg-gray-800 text-white py-4 text-center mt-3 mr-9 rounded-md">
         <div className="container mx-auto">
           <p className="text-sm">Demo Admin Dashboard Page</p>
-          <span>Created By - Saikat Singha</span>
+          <span>Created By - <span className="text-fuchsia-500 cursor-pointer hover:text-red-500 duration-300"> Saikat Singha</span></span>
           <div className="mt-2">
             <Link to="/terms" className="text-gray-400 hover:text-white mx-2">
               Terms of Service
